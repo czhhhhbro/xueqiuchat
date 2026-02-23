@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>雪球 HOME · IM</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+body{background:#fff;height:100vh;display:flex;flex-direction:column}
+.header{background:linear-gradient(135deg,#7B61FF 0%,#9D85FE 100%);color:white;padding:16px 20px;text-align:center;font-size:18px;font-weight:600}
+.chat-container{flex:1;padding:20px;overflow-y:auto;display:flex;flex-direction:column;gap:12px}
+.message{max-width:75%;padding:12px 16px;border-radius:18px;font-size:15px;line-height:1.4;box-shadow:0 1px 2px rgba(0,0,0,0.05)}
+.message.self{align-self:flex-end;background:linear-gradient(135deg,#7B61FF,#9277FF);color:white;border-bottom-right-radius:6px}
+.message.other{align-self:flex-start;background:#f1f1f5;color:#111;border-bottom-left-radius:6px}
+.username{font-size:12px;opacity:.8;margin-bottom:4px}
+.input-bar{display:flex;padding:12px 16px;gap:10px;background:white;border-top:1px solid #eee}
+#msgInput{flex:1;padding:14px 18px;border-radius:24px;border:1px solid #e2e8f0;outline:0;font-size:15px}
+#msgInput:focus{border-color:#7B61FF}
+button{padding:14px 22px;border-radius:24px;border:none;background:linear-gradient(135deg,#7B61FF,#9D85FE);color:white;font-weight:600;cursor:pointer}
+.login-modal{position:fixed;inset:0;background:rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;z-index:999}
+.login-box{background:white;width:90%;max-width:380px;padding:30px;border-radius:22px;box-shadow:0 10px 30px rgba(123,97,2
